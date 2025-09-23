@@ -1,77 +1,63 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-git init
+<html lang="en">
 <head>
-  <title>
-        ZAP LOAN - Register
-    </title>
-    <body>
-        <form action="/submit" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required><br>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAP LOAN - Register</title>
+  <link rel="stylesheet" href=style.css>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Register for Zap Loan</h1>
+    <p>Create your account to apply for quick and easy loans.</p>
 
-  <br>
+    <form action="/submit" method="post">
+     
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-  <label for="phone number">Phone Number:</label>
-  <input type="tel" id="phone number" name="phone number" required><br>
+     
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+254 7xx xxx xxx" required>
 
-  <br>
+      
+      <label for="id_number">ID Number:</label>
+      <input type="text" id="id_number" name="id_number" placeholder="Enter your ID number" required>
 
-  <label for="id number">ID Number:</label>
-  <input type="text" id="id number" name="id number" required><br>
-    
-  <br>
+      
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required>
 
-  <label for="address">Address:</label>
-    <input type="text" id="address" name="address" required><br>
+      
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
 
-    <br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <label for="DOB"></label>
-    <input type="date" id="DOB" name="DOB" required>
+      
+      <label>Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
 
-<br>
-    
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+      </div>
 
-    
+     
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required><br>
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password" required>
 
-  <br>
+      
+      <button type="submit">Register</button>
+    </form>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required><br>
-
-  <br>
-
-
-  <input type="submit" value="Submit">
-</form>
-    
-<label for="gender">Gender:</label><br>
-
-    <input type="radio" id="male" name="gender" value="male" required>
-    <label for="male">Male</label><br>
-
-    <input type="radio" id="female" name="gender" value="female" required>
-    <label for="female">Female</label><br>
-
-<br>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br>
-
-    <br>
-
-    <label for="confirm password">Confirm Password:</label>
-    <input type="password" id="confirm password" name="confirm password" required><br>
-<br
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required><br>
-<br>
-
-  <input type="submit" value="Submit">
-</form>
-
+    <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
 </body>
+</html>
